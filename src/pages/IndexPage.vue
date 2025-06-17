@@ -1,13 +1,15 @@
 <template>
-  <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-vertical.svg"
-      style="width: 200px; height: 200px"
-    >
+  <q-page class="flex flex-center bg-grey-10 text-white">
+    <Uploader />
   </q-page>
 </template>
 
 <script setup>
-//
+import Uploader from 'src/components/Uploader.vue'
 </script>
+
+<style scoped>
+.q-page {
+  min-height: 100vh;
+}
+</style>
